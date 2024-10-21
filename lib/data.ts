@@ -5,7 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import TwiiterCraft from "@/public/twittercraft.png"
 import colorai from "@/public/colorai.png";
-import color from "@/public/color.png";
+import mock from "@/public/mock.png";
 
 export const links = [
     {
@@ -63,6 +63,14 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Mock Builder",
+        description:
+            "This web application allows users to generate realistic mock data using AI-powered algorithms.",
+        tags: ["React", "Next.js", "SQL", "Tailwind", "Convex", "Vercel", "Shadcn"],
+        imageUrl: mock,
+        liveUrl: "https://mock-builder.vercel.app/",
+    },
+    {
         title: "TwitterCraft",
         description:
             "I worked as a full-stack developer on this  project for 2 months. AI-powered tool that crafts personalized Twitter bios based on user-provided roles.",
@@ -78,14 +86,7 @@ export const projectsData = [
         imageUrl: colorai,
         liveUrl: "https://color-pallete-ai.vercel.app/",
     },
-    {
-        title: "Color Pallets",
-        description:
-            "A public web app which displays color pallets for all web developers/designers. It shows cards hex codes, copy and use it in your projects..",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "MongoDB", "Vercel", "Shadcn"],
-        imageUrl: color,
-        liveUrl: "https://colorpalletes.vercel.app/",
-    },
+
 ] as const;
 
 export const skillsData = [
