@@ -39,7 +39,7 @@ export default function Experience() {
             </span>
           </h3>
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Remote Full Stack Developer {"(2021-2024)"}
+            Full Stack Web Developer {"(2021-Current)"}
           </time>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
             I am a remote full stack developer handles the development of <br />
