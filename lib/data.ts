@@ -68,7 +68,7 @@ export const projectsData = [
             "This web application allows users to generate realistic mock data using AI-powered algorithms.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Convex", "Vercel", "Shadcn"],
         imageUrl: mock,
-        liveUrl: "https://mock-builder.vercel.app/",
+        liveUrl: "https://www.mockjsonbuilder.shop/",
     },
     {
         title: "TwitterCraft",
@@ -76,7 +76,7 @@ export const projectsData = [
             "I worked as a full-stack developer on this  project for 2 months. AI-powered tool that crafts personalized Twitter bios based on user-provided roles.",
         tags: ["React", "Next.js", "ChatGPT", "Tailwind", "Shadcn"],
         imageUrl: TwiiterCraft,
-        liveUrl: "https://twitter-craft-gm3yobyjv-zaidbhati10114s-projects.vercel.app/",
+        liveUrl: "https://twitter-craft.vercel.app/",
     },
     {
         title: "Color AI",
@@ -88,6 +88,7 @@ export const projectsData = [
     },
 
 ] as const;
+
 
 export const skillsData = [
     "HTML",
