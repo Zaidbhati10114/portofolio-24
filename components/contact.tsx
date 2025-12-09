@@ -14,34 +14,20 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    const formData = new FormData(e.target as HTMLFormElement);
 
-    const email = formData.get("senderEmail") as string;
-    const message = formData.get("message") as string;
-
-    try {
-      const response = await fetch("/api/mail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, message }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        if (data) {
-          toast.success("Thank you for your message!");
-        }
-        setLoading(false);
-        form.reset();
-      } else {
-        toast.error("Failed to send email. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      toast.error("An error occurred. Please try again.");
+    formData.append("access_key", "87af70c3-1476-4d63-ae9d-5ae4840c6089");
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+    const result = await response.json();
+    if (result.success) {
+      toast.success("Message sent successfully!");
+      setLoading(false);
+    } else {
+      toast.error("Message failed to send");
+      setLoading(false);
     }
   };
 
