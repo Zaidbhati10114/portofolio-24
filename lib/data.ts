@@ -68,7 +68,7 @@ export const projectsData = [
             "This web application allows users to generate realistic mock data using AI-powered algorithms.",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Convex", "Vercel", "Shadcn"],
         imageUrl: mock,
-        liveUrl: "https://www.mockjsonbuilder.shop/",
+        liveUrl: "https://mock-builder.vercel.app/",
     },
     {
         title: "TwitterCraft",
